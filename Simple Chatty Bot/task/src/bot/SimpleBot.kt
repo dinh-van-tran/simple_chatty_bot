@@ -15,8 +15,14 @@ fun main() {
     val remainder3 = readln().toInt()
     val remainder5 = readln().toInt()
     val remainder7 = readln().toInt()
+    val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
 
-    val yourAge = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
+    println("Your age is $age; that's a good time to start programming!")
+    println("Now I will prove to you that I can count to any number you want.")
+    val countNumber = readln().toInt()
+    for (number in countNumber downTo 0) {
+        println("${countNumber - number}!")
+    }
 
-    println("Your age is $yourAge; that's a good time to start programming!")
+    println("Completed, have a nice day!")
 }
